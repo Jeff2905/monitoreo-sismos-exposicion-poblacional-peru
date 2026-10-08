@@ -1,1 +1,27 @@
-[]
+   [
+  { "departamento": "AMAZONAS", "poblacion": null },
+  { "departamento": "ANCASH", "poblacion": null },
+  { "departamento": "APURIMAC", "poblacion": null },
+  { "departamento": "AREQUIPA", "poblacion": null },
+  { "departamento": "AYACUCHO", "poblacion": null },
+  { "departamento": "CAJAMARCA", "poblacion": null },
+  { "departamento": "CALLAO", "poblacion": null },
+  { "departamento": "CUSCO", "poblacion": null },
+  { "departamento": "HUANCAVELICA", "poblacion": null },
+  { "departamento": "HUANUCO", "poblacion": null },
+  { "departamento": "ICA", "poblacion": null },
+  { "departamento": "JUNIN", "poblacion": null },
+  { "departamento": "LA LIBERTAD", "poblacion": null },
+  { "departamento": "LAMBAYEQUE", "poblacion": null },
+  { "departamento": "LIMA", "poblacion": null },
+  { "departamento": "LORETO", "poblacion": null },
+  { "departamento": "MADRE DE DIOS", "poblacion": null },
+  { "departamento": "MOQUEGUA", "poblacion": null },
+  { "departamento": "PASCO", "poblacion": null },
+  { "departamento": "PIURA", "poblacion": null },
+  { "departamento": "PUNO", "poblacion": null },
+  { "departamento": "SAN MARTIN", "poblacion": null },
+  { "departamento": "TACNA", "poblacion": null },
+  { "departamento": "TUMBES", "poblacion": null },
+  { "departamento": "UCAYALI", "poblacion": null }
+]
