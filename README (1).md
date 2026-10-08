@@ -24,7 +24,7 @@ El proyecto sigue un enfoque orientado a servicios (SOA) de tres capas:
 - **Backend orquestador (API REST propia):** Node.js + Express
 - **Servicios externos consumidos:**
   - IGP – ArcGIS REST (Feature Layer de sismos reportados) — JSON/geoJSON
-  - INEI – Plataforma Nacional de Datos Abiertos (CKAN/DKAN Data API) — JSON
+  - INEI – Plataforma Nacional de Datos Abiertos (DKAN Data API) — JSON
 
 ## Tecnologías
 | Capa       | Tecnología                     |
