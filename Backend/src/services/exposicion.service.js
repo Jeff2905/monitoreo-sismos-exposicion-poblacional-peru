@@ -1,7 +1,7 @@
 import { fetchSismos } from "./igp.service.js";
 import { fetchPoblacion } from "./inei.service.js";
 import { getCache, setCache } from "../cache.js";
-const norm = (s = "") => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toUpperCase();
+const norm = (s) => (s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toUpperCase();
 export async function getExposicion() {
   const key = "exposicion";
   const fresh = getCache(key);
