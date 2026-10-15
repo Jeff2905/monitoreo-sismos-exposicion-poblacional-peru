@@ -23,6 +23,16 @@ app.use(cors({
 }));
 
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.json({
+    mensaje: "Backend funcionando correctamente",
+    endpoints: [
+      "/api/sismos",
+      "/api/poblacion",
+      "/api/exposicion"
+    ]
+  });
+});
 const wrap = (fn) => async (req, res) => {
   try { res.json(await fn(req)); }
   catch (e) { res.status(503).json({ error: "Servicio externo no disponible", detalle: e.message }); }
