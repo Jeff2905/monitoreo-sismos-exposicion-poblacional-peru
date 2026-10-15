@@ -7,8 +7,21 @@ import { fetchPoblacion } from "./services/inei.service.js";
 import { getExposicion } from "./services/exposicion.service.js";
 
 const app = express();
-const origenes = (process.env.CORS_ORIGINS || "http://localhost:3000").split(",");
-app.use(cors({ origin: origenes }));
+
+const origenes = (
+  process.env.CORS_ORIGINS ||
+  "http://localhost:3000,https://monitoreo-sismos-exposicion-poblaci.vercel.app"
+)
+  .split(",")
+  .map((origen) => origen.trim())
+  .filter(Boolean);
+
+app.use(cors({
+  origin: origenes,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
+
 app.use(express.json());
 const wrap = (fn) => async (req, res) => {
   try { res.json(await fn(req)); }
