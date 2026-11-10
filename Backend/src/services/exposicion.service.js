@@ -1,7 +1,11 @@
 import { fetchSismos } from "./igp.service.js";
 import { fetchPoblacion } from "./inei.service.js";
 import { getCache, setCache } from "../cache.js";
-const norm = (s = "") => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toUpperCase();
+
+const SIN_DEPARTAMENTO = "SIN DEPARTAMENTO";
+const norm = (s) =>
+  (s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toUpperCase();
+
 export async function getExposicion() {
   const key = "exposicion";
   const fresh = getCache(key);
@@ -9,9 +13,17 @@ export async function getExposicion() {
   try {
     const [sismos, poblacion] = await Promise.all([fetchSismos(), fetchPoblacion()]);
     const zonas = {};
-    for (const p of poblacion) zonas[norm(p.departamento)] = { departamento: p.departamento, poblacion: p.poblacion, sismos: 0, magnitudMax: null };
+    for (const p of poblacion) {
+      if (!p.departamento) continue;
+      zonas[norm(p.departamento)] = {
+        departamento: p.departamento, poblacion: p.poblacion, sismos: 0, magnitudMax: null,
+      };
+    }
     for (const s of sismos) {
-      const z = (zonas[norm(s.departamento)] ??= { departamento: s.departamento, poblacion: null, sismos: 0, magnitudMax: null });
+      const nombre = s.departamento || SIN_DEPARTAMENTO;
+      const z = (zonas[norm(nombre)] ??= {
+        departamento: nombre, poblacion: null, sismos: 0, magnitudMax: null,
+      });
       z.sismos += 1;
       z.magnitudMax = Math.max(z.magnitudMax ?? 0, s.magnitud ?? 0);
     }
