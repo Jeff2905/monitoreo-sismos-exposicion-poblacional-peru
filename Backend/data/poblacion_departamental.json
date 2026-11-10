@@ -1,27 +1,102 @@
-   [
-  { "departamento": "AMAZONAS", "poblacion": null },
-  { "departamento": "ANCASH", "poblacion": null },
-  { "departamento": "APURIMAC", "poblacion": null },
-  { "departamento": "AREQUIPA", "poblacion": null },
-  { "departamento": "AYACUCHO", "poblacion": null },
-  { "departamento": "CAJAMARCA", "poblacion": null },
-  { "departamento": "CALLAO", "poblacion": null },
-  { "departamento": "CUSCO", "poblacion": null },
-  { "departamento": "HUANCAVELICA", "poblacion": null },
-  { "departamento": "HUANUCO", "poblacion": null },
-  { "departamento": "ICA", "poblacion": null },
-  { "departamento": "JUNIN", "poblacion": null },
-  { "departamento": "LA LIBERTAD", "poblacion": null },
-  { "departamento": "LAMBAYEQUE", "poblacion": null },
-  { "departamento": "LIMA", "poblacion": null },
-  { "departamento": "LORETO", "poblacion": null },
-  { "departamento": "MADRE DE DIOS", "poblacion": null },
-  { "departamento": "MOQUEGUA", "poblacion": null },
-  { "departamento": "PASCO", "poblacion": null },
-  { "departamento": "PIURA", "poblacion": null },
-  { "departamento": "PUNO", "poblacion": null },
-  { "departamento": "SAN MARTIN", "poblacion": null },
-  { "departamento": "TACNA", "poblacion": null },
-  { "departamento": "TUMBES", "poblacion": null },
-  { "departamento": "UCAYALI", "poblacion": null }
+[
+  {
+    "departamento": "AMAZONAS",
+    "poblacion": 430305
+  },
+  {
+    "departamento": "ANCASH",
+    "poblacion": 1208895
+  },
+  {
+    "departamento": "APURIMAC",
+    "poblacion": 423128
+  },
+  {
+    "departamento": "AREQUIPA",
+    "poblacion": 1656746
+  },
+  {
+    "departamento": "AYACUCHO",
+    "poblacion": 668193
+  },
+  {
+    "departamento": "CAJAMARCA",
+    "poblacion": 1439748
+  },
+  {
+    "departamento": "CALLAO",
+    "poblacion": 1247227
+  },
+  {
+    "departamento": "CUSCO",
+    "poblacion": 1414069
+  },
+  {
+    "departamento": "HUANCAVELICA",
+    "poblacion": 319894
+  },
+  {
+    "departamento": "HUANUCO",
+    "poblacion": 737187
+  },
+  {
+    "departamento": "ICA",
+    "poblacion": 1104956
+  },
+  {
+    "departamento": "JUNIN",
+    "poblacion": 1385412
+  },
+  {
+    "departamento": "LA LIBERTAD",
+    "poblacion": 2181593
+  },
+  {
+    "departamento": "LAMBAYEQUE",
+    "poblacion": 1382858
+  },
+  {
+    "departamento": "LIMA",
+    "poblacion": 11618679
+  },
+  {
+    "departamento": "LORETO",
+    "poblacion": 1069225
+  },
+  {
+    "departamento": "MADRE DE DIOS",
+    "poblacion": 209165
+  },
+  {
+    "departamento": "MOQUEGUA",
+    "poblacion": 204742
+  },
+  {
+    "departamento": "PASCO",
+    "poblacion": 261297
+  },
+  {
+    "departamento": "PIURA",
+    "poblacion": 2195231
+  },
+  {
+    "departamento": "PUNO",
+    "poblacion": 1190370
+  },
+  {
+    "departamento": "SAN MARTIN",
+    "poblacion": 965964
+  },
+  {
+    "departamento": "TACNA",
+    "poblacion": 407996
+  },
+  {
+    "departamento": "TUMBES",
+    "poblacion": 273604
+  },
+  {
+    "departamento": "UCAYALI",
+    "poblacion": 663630
+  }
 ]

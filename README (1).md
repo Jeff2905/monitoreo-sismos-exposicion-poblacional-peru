@@ -10,6 +10,7 @@ Elmer Ely Medina Rodriguez
 - Chucos Cardenas Javier — U19216721
 - Cajahuanca Cruz, Brad Kenedy — U21310736
 - Hinostroza Manrique, Sandro Sleither — U21221226
+- Lopez Merino, Jeffry Steve - U19221645
 
 ## Descripción del proyecto
 El Perú es uno de los países con mayor actividad sísmica de Sudamérica. Este proyecto propone una aplicación web orientada a servicios que integra la información sísmica del Instituto Geofísico del Perú (IGP) con la información poblacional del Instituto Nacional de Estadística e Informática (INEI), con el fin de facilitar el análisis de la exposición de la población ante los eventos sísmicos registrados en el territorio peruano.
