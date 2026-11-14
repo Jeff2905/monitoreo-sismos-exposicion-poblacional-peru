@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
+import ReportesSaga from "./ReportesSaga.js";
 import axios from "axios";
 
 const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000";
@@ -117,6 +118,7 @@ export default function App() {
           </p>
         </aside>
       </div>
+      <ReportesSaga apiUrl={API_URL} />
     </div>
   );
 }

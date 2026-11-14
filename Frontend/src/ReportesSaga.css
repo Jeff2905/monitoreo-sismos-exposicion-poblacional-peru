@@ -1,0 +1,283 @@
+
+/* CONTENEDOR PRINCIPAL */
+.saga-panel {
+  margin: 25px 8px 40px;
+  padding: 0;
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* ENCABEZADO */
+.saga-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.saga-etiqueta {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.saga-encabezado h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.saga-encabezado p {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.saga-indicador {
+  font-size: 12px;
+  color: #666;
+  background: #f5f5f5;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* DISTRIBUCIÓN */
+.saga-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* SECCIONES */
+.saga-tarjeta {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 18px;
+  min-width: 0;
+}
+
+.saga-tarjeta h3 {
+  font-size: 16px;
+  margin: 0 0 15px;
+  font-weight: bold;
+}
+
+/* FORMULARIO */
+.saga-tarjeta label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.saga-tarjeta select {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: white;
+  color: #222;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+/* BOTONES */
+.saga-boton {
+  margin-top: 12px;
+  padding: 9px 15px;
+  background: #333;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.saga-boton:hover:not(:disabled) {
+  background: #555;
+}
+
+.saga-boton-secundario {
+  padding: 8px 12px;
+  background: white;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.saga-boton-secundario:hover:not(:disabled) {
+  background: #f5f5f5;
+}
+
+.saga-boton:disabled,
+.saga-boton-secundario:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* TEXTOS */
+.saga-ayuda,
+.saga-vacio {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* RESULTADO DE SAGA */
+.saga-resultado {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fafafa;
+}
+
+.saga-resultado p {
+  margin: 6px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.saga-resultado-ok {
+  border-left: 3px solid #57966d;
+}
+
+.saga-resultado-error {
+  border-left: 3px solid #c45c5c;
+}
+
+/* BITÁCORA */
+.saga-bitacora {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.saga-evento {
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.saga-paso {
+  font-weight: 500;
+}
+
+.saga-estado {
+  font-size: 12px;
+  color: #666;
+}
+
+.saga-evento small {
+  width: 100%;
+  color: #777;
+}
+
+.saga-evento-exito .saga-estado {
+  color: #36734c;
+}
+
+.saga-evento-error .saga-estado {
+  color: #b34b4b;
+}
+
+.saga-evento-compensado .saga-estado {
+  color: #956b27;
+}
+
+/* HISTORIAL */
+.saga-historial {
+  margin-top: 20px;
+}
+
+.saga-historial-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.saga-historial h3 {
+  margin-bottom: 5px;
+}
+
+.saga-historial-titulo p {
+  margin: 0 0 15px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* TABLA DE REPORTES */
+.saga-tabla-contenedor {
+  overflow-x: auto;
+}
+
+.saga-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.saga-tabla th,
+.saga-tabla td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.saga-tabla th {
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+  background: white;
+  color: #111;
+}
+
+.saga-tabla tr:hover {
+  background: #fafafa;
+}
+
+.saga-chip {
+  background: transparent;
+  color: #333;
+  padding: 0;
+  border-radius: 0;
+  font-size: 13px;
+}
+
+.saga-error-listado {
+  font-size: 13px;
+  color: #b34b4b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .saga-columnas {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .saga-encabezado {
+    flex-direction: column;
+  }
+
+  .saga-indicador {
+    display: none;
+  }
+
+  .saga-tarjeta {
+    padding: 12px;
+  }
+}
