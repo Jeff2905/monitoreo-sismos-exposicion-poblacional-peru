@@ -72,4 +72,4 @@ npm start
 | GET    | `/api/exposicion`     | Devuelve sismos + población integrados por zona geográfica      |
 
 ## Estado del proyecto
-🚧 En desarrollo — proyecto académico del curso de Arquitectura Orientada al Servicio.
+En desarrollo — proyecto académico del curso de Arquitectura Orientada al Servicio.
